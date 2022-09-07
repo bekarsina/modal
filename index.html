@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="overflow-hidden" dir="rtl">
+    <button class="open-modal border border-2 border-black mx-[550px] my-[200px]">open-modal</button>
+    <div class="w-screen h-screen flex justifu-center items-center">
+      <div class="conteiner w-[700px] mx-auto top-[50%] hidden border border-2 border-black rounded-lg">
+        <div class="header flex justify-between">
+          <h2 class="font-bold text-[36px] text-red-600">
+            پیشنهاد خرید انحصاری برای شما
+          </h2>
+          <button class="text-[25px] close-modal ml-[10px]"><i class="fas fa-xmark"></i></button>
+        </div>
+        <hr class="my-[20px] bg-slate-500">
+        <div class="flex">
+          <div>
+            <h3 class="text-black text-[19px] font-bold">سامسونگ مدل Galaxy Note
+              10 SM-N970F/DS </h3>
+            <div class="flex text-[16px] py-2">
+              <p class="text-slate-600 text-[15px] font-bold">دسته:</p>
+              <p class="category-product text-[15px] pr-3"> کالای دیجیتال</p>
+              <p class="text-slate-600 text-[15px] pr-7 font-bold">برچسب:</p>
+              <p class="category-product text-[15px] pr-3">سامسونگ</p>
+            </div>
+            <div class="flex mt-6">
+              <p class="text-slate-600 text-[14px] font-bold">رنگ بندی: </p>
+              <ul class="flex">
+                <li class="mr-2">
+                  <input type="radio" name="coloring" id="coloring-1"
+                    class="hidden peer" required>
+                  <label for="coloring-1" class="inline-flex justify-between
+                    items-center p-3 w-full rounded-lg
+                    border border-black cursor-pointer
+                    peer-checked:border-blue-600
+                    peer-checked:border-2">
+                  </label>
+                </li>
+                <li class="mr-2">
+                  <input type="radio" name="coloring" id="coloring-2"
+                    value="hosting-big" class="hidden peer">
+                  <label for="coloring-2" class="inline-flex justify-between
+                    items-center p-3 w-full text-gray-500 bg-black rounded-lg
+                    border border-balck cursor-pointer
+                    peer-checked:border-blue-600
+                    peer-checked:border-2
+                    dark:bg-black">
+                  </label>
+                </li>
+                <li class="mr-2">
+                  <input type="radio" name="coloring" id="coloring-3"
+                    class="hidden peer">
+                  <label for="coloring-3" class="inline-flex justify-between
+                    items-center p-3 w-full text-gray-500 bg-blue-700 rounded-lg
+                    border border-blue-700 cursor-pointer
+                    dark:peer-checked:text-blue-500
+                    peer-checked:border-blue-600
+                    dark:bg-blue-700
+                    peer-checked:border-2">
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="flex mt-6">
+              <p class="text-slate-600 text-[14px] font-bold">سایز: </p>
+              <ul class="flex">
+                <li class="mr-4">
+                  <input type="radio" name="size" id="size-1"
+                    class="hidden peer" required>
+                  <label for="size-1" class="inline-flex justify-between
+                    items-center w-full rounded-lg
+                    cursor-pointer
+                    dark:peer-checked:text-blue-500
+                    peer-checked:border-blue-600">38
+                  </label>
+                </li>
+                <li class="mr-4">
+                  <input type="radio" name="size" id="size-2"
+                    class="hidden peer">
+                  <label for="size-2" class="inline-flex justify-between
+                    items-center w-full bg-white rounded-lg
+                    cursor-pointer
+                    dark:peer-checked:text-blue-500
+                    peer-checked:border-blue-600
+                    ">34
+                  </label>
+                </li>
+                <li class="mr-4">
+                  <input type="radio" name="size" id="size-3"
+                    class="hidden peer">
+                  <label for="size-3" class="inline-flex justify-between
+                    items-center w-full bg-white rounded-lg
+                    cursor-pointer
+                    dark:peer-checked:text-blue-500
+                    peer-checked:border-blue-600
+                    ">30
+                  </label>
+                </li>
+                <li class="mr-4">
+                  <input type="radio" name="size" id="size-4"
+                    class="hidden peer" required>
+                  <label for="size-4" class="inline-flex justify-between
+                    items-center w-full rounded-lg
+                    cursor-pointer
+                    dark:peer-checked:text-blue-500
+                    peer-checked:border-blue-600">28
+                  </label>
+                </li>
+                <li class="mr-4">
+                  <input type="radio" name="size" id="size-5"
+                    class="hidden peer">
+                  <label for="size-5" class="inline-flex justify-between
+                    items-center w-full bg-white rounded-lg
+                    cursor-pointer
+                    dark:peer-checked:text-blue-500
+                    peer-checked:border-blue-600
+                    ">26
+                  </label>
+                </li>
+                <li class="mr-4">
+                  <input type="radio" name="size" id="size-6"
+                    class="hidden peer">
+                  <label for="size-6" class="inline-flex justify-between
+                    items-center w-full bg-white rounded-lg
+                    cursor-pointer
+                    dark:peer-checked:text-blue-500
+                    peer-checked:border-blue-600
+                    ">24
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="flex mt-6">
+              <p class="text-slate-600 text-[14px] font-bold">جنس: </p>
+              <ul class="flex">
+                <li class="mr-4">
+                  <input type="radio" name="material" id="material-1"
+                    class="hidden peer" required>
+                  <label for="material-1" class="inline-flex justify-between
+                    items-center w-full rounded-lg
+                    cursor-pointer
+                    dark:peer-checked:text-blue-500">استیل
+                  </label>
+                </li>
+                <li class="mr-4">
+                  <input type="radio" name="material" id="material-2"
+                    value="hosting-big" class="hidden peer">
+                  <label for="material-2" class="inline-flex justify-between
+                    items-center w-full bg-white rounded-lg
+                    cursor-pointer
+                    dark:peer-checked:text-blue-500">نقره
+                  </label>
+                </li>
+                <li class="mr-5">
+                  <input type="radio" name="material" id="material-3"
+                    class="hidden peer">
+                  <label for="material-3" class="inline-flex justify-between
+                    items-center w-full bg-white rounded-lg
+                    cursor-pointer
+                    dark:peer-checked:text-blue-500">طلا
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <del class="flex text-[34px] text-slate-500 mt-7"><p
+                class="text-[25px]
+                mt-2 ml-2"> قیمت سایت: </p> 2.400.000 تومان</del>
+          </div>
+          <div>
+            <img src="./img/original 1.svg" alt="image product">
+          </div>
+        </div>
+        <hr class="my-[20px] bg-slate-500">
+        <div class="flex justify-between">
+          <div>
+            <p class="text-[16px] font-bold">قیمت تخفیف خورده برای شما</p>
+            <h4 class="text-red-600 text-[53px] font-bold">1.800.000</h4>
+          </div>
+          <div>
+            <button class="bg-green-500 text-[20px] text-white px-7 py-2
+              rounded-md hover:bg-green-700">افزودن به سبد خرید</button>
+            <p class="text-slate-500 mt-[13px] text-[14px] text-center
+              underline cursor-pointer skip-modal">رد شدن از پیشنهاد خرید</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

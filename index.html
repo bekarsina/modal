@@ -10,10 +10,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="overflow-hidden" dir="rtl">
-    <div class="w-screen h-screen flex justifu-center items-center">
-      <div class="conteiner 2xl:w-3/4 mx-auto top-[50%] border border-2
-        border-black rounded-lg">
-        <div class="header flex justify-between pt-3 px-3">
+    <div id="popup-modal" tabindex="-1" class="overflow-y-auto bg-white
+      overflow-x-hidden fixed top-0 right-0 left-0 z-50 md:inset-0 h-modal
+      md:h-full">
+      <div class="conteiner w-[1000px] mx-auto top-[50%] border border-2
+        border-black rounded-lg ">
+        <div class="header flex justify-between pt-3 px-3 items-center">
           <h2 class="font-bold text-[36px] text-red-600">
             پیشنهاد خرید انحصاری برای شما
           </h2>
@@ -23,7 +25,8 @@
         <hr class="my-[20px] bg-slate-500 px-3">
         <div class="flex px-3 justify-between">
           <div>
-            <h3 class="text-black text-[19px] font-bold">سامسونگ مدل Galaxy Note
+            <h3 class="text-black text-[19px] font-bold">سامسونگ مدل Galaxy
+              Note
               10 SM-N970F/DS </h3>
             <div class="flex text-[16px] py-2">
               <p class="text-slate-600 text-[15px] font-bold">دسته:</p>
@@ -59,7 +62,8 @@
                   <input type="radio" name="coloring" id="coloring-3"
                     class="hidden peer">
                   <label for="coloring-3" class="inline-flex justify-between
-                    items-center p-3 w-full text-gray-500 bg-blue-700 rounded-lg
+                    items-center p-3 w-full text-gray-500 bg-blue-700
+                    rounded-lg
                     border border-blue-700 cursor-pointer
                     dark:peer-checked:text-blue-500
                     peer-checked:border-blue-600
@@ -170,22 +174,22 @@
                 </li>
               </ul>
             </div>
-            <del class="flex text-[34px] text-slate-500 mt-7"><p
-                class="text-[25px]
-                mt-2 ml-2"> قیمت سایت: </p> 2.400.000 تومان</del>
+            <del class="flex text-[34px] text-slate-500 mt-7">
+              قیمت سایت: 2.400.000 تومان</del>
           </div>
           <div class="2xl:w-[400px] mx-auto">
-            <img class="w-full" src="./img/original 1.svg" alt="image product">
+            <img class="w-full" src="./img/original 1.svg" alt="image
+              product">
           </div>
         </div>
         <hr class="my-[20px] bg-slate-500 px-3">
-        <div class="flex justify-between pb-3 px-3">
+        <div class="flex justify-between pb-3 px-3 items-center">
           <div>
             <p class="text-[16px] font-bold">قیمت تخفیف خورده برای شما</p>
             <h4 class="text-red-600 text-[53px] font-bold">1.800.000</h4>
           </div>
           <div>
-            <!--  -->
+
             <button class="bg-[#00d66f] text-[20px] text-white px-7 py-2
               rounded-md"><div role="status">
                 <svg role="status" class="inline mr-2 w-7 h-7 animate-spin"
@@ -194,7 +198,8 @@
                   <path d="M100 50.5908C100 78.2051 77.6142 100.591 50
                     100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766
                     22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100
-                    50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50
+                    50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094
+                    50
                     91.5094C72.5987 91.5094 90.9186 73.1895 90.9186
                     50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013
                     9.67226 9.08144 27.9921 9.08144 50.5908Z"

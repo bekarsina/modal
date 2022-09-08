@@ -8,8 +8,9 @@
     <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
-  <body class="overflow-hidden bg-gray-500 relative flex justify-center
+  <body class="bg-gray-500 relative flex justify-center
     items-center" dir="rtl">
     <div class="w-full section h-full z-10">
       <button class="btn">btn</button>
@@ -23,168 +24,76 @@
         sapiente.</p>
     </div>
 
-    <div class="conteiner w-[1000px] mx-auto top-[50%] rounded-lg hidden
-      bg-white opacity-100 absolute z-20">
+    <div class="conteiner w-[1000px] mx-auto rounded-lg hidden
+      bg-white top-0 absolute z-20">
       <div class="header flex justify-between pt-3 px-3 items-center">
-        <h2 class="font-bold text-[36px] text-red-600">
+        <h2 class="title font-bold text-[36px] text-red-600">
           پیشنهاد خرید انحصاری برای شما
         </h2>
         <button class="text-[25px] close-modal ml-[10px]"><i class="fas
             fa-xmark"></i></button>
       </div>
       <hr class="my-[20px] bg-slate-500 px-3">
-      <div class="flex px-3 justify-between">
-        <div>
+      <div class="content flex px-3 justify-between">
+        <div class="product-content">
           <h3 class="text-black text-[19px] font-bold">سامسونگ مدل Galaxy
             Note
             10 SM-N970F/DS </h3>
-          <div class="flex text-[16px] py-2">
+          <div class="category flex text-[16px] py-2">
             <p class="text-slate-600 text-[15px] font-bold">دسته:</p>
             <p class="category-product text-[15px] pr-3"> کالای دیجیتال</p>
             <p class="text-slate-600 text-[15px] pr-7 font-bold">برچسب:</p>
             <p class="category-product text-[15px] pr-3">سامسونگ</p>
           </div>
-          <div class="flex mt-6">
-            <p class="text-slate-600 text-[14px] font-bold">رنگ بندی: </p>
-            <ul class="flex">
-              <li class="mr-2">
-                <input type="radio" name="coloring" id="coloring-1"
-                  class="hidden peer" required>
-                <label for="coloring-1" class="inline-flex justify-between
-                  items-center p-3 w-full rounded-lg
-                  border border-black cursor-pointer
-                  peer-checked:border-blue-600
-                  peer-checked:border-2">
-                </label>
-              </li>
-              <li class="mr-2">
-                <input type="radio" name="coloring" id="coloring-2"
-                  value="hosting-big" class="hidden peer">
-                <label for="coloring-2" class="inline-flex justify-between
-                  items-center p-3 w-full text-gray-500 bg-black rounded-lg
-                  border border-balck cursor-pointer
-                  peer-checked:border-blue-600
-                  peer-checked:border-2
-                  dark:bg-black">
-                </label>
-              </li>
-              <li class="mr-2">
-                <input type="radio" name="coloring" id="coloring-3"
-                  class="hidden peer">
-                <label for="coloring-3" class="inline-flex justify-between
-                  items-center p-3 w-full text-gray-500 bg-blue-700
-                  rounded-lg
-                  border border-blue-700 cursor-pointer
-                  dark:peer-checked:text-blue-500
-                  peer-checked:border-blue-600
-                  dark:bg-blue-700
-                  peer-checked:border-2">
-                </label>
-              </li>
-            </ul>
+          <div class="list">
+            <div class="flex mt-6">
+              <p class="text-slate-600 text-[14px] font-bold">رنگ بندی: </p>
+              <ul class="flex">
+                <li class="mr-2">
+                  <input type="radio" name="coloring" id="coloring-1"
+                    class="hidden peer" required>
+                  <label for="coloring-1" class="inline-flex justify-between
+                    items-center p-3 w-full rounded-lg
+                    border border-black cursor-pointer
+                    peer-checked:border-blue-600
+                    peer-checked:border-2">
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="flex mt-6">
+              <p class="text-slate-600 text-[14px] font-bold">سایز: </p>
+              <ul class="flex">
+                <li class="mr-4">
+                  <input type="radio" name="size" id="size-1"
+                    class="hidden peer" required>
+                  <label for="size-1" class="inline-flex justify-between
+                    items-center w-full rounded-lg
+                    cursor-pointer
+                    dark:peer-checked:text-blue-500
+                    peer-checked:border-blue-600">38
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="flex mt-6">
+              <p class="text-slate-600 text-[14px] font-bold">جنس: </p>
+              <ul class="flex">
+                <li class="mr-4">
+                  <input type="radio" name="material" id="material-1"
+                    class="hidden peer" required>
+                  <label for="material-1" class="inline-flex justify-between
+                    items-center w-full rounded-lg
+                    cursor-pointer
+                    dark:peer-checked:text-blue-500">استیل
+                  </label>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="flex mt-6">
-            <p class="text-slate-600 text-[14px] font-bold">سایز: </p>
-            <ul class="flex">
-              <li class="mr-4">
-                <input type="radio" name="size" id="size-1"
-                  class="hidden peer" required>
-                <label for="size-1" class="inline-flex justify-between
-                  items-center w-full rounded-lg
-                  cursor-pointer
-                  dark:peer-checked:text-blue-500
-                  peer-checked:border-blue-600">38
-                </label>
-              </li>
-              <li class="mr-4">
-                <input type="radio" name="size" id="size-2"
-                  class="hidden peer">
-                <label for="size-2" class="inline-flex justify-between
-                  items-center w-full bg-white rounded-lg
-                  cursor-pointer
-                  dark:peer-checked:text-blue-500
-                  peer-checked:border-blue-600
-                  ">34
-                </label>
-              </li>
-              <li class="mr-4">
-                <input type="radio" name="size" id="size-3"
-                  class="hidden peer">
-                <label for="size-3" class="inline-flex justify-between
-                  items-center w-full bg-white rounded-lg
-                  cursor-pointer
-                  dark:peer-checked:text-blue-500
-                  peer-checked:border-blue-600
-                  ">30
-                </label>
-              </li>
-              <li class="mr-4">
-                <input type="radio" name="size" id="size-4"
-                  class="hidden peer" required>
-                <label for="size-4" class="inline-flex justify-between
-                  items-center w-full rounded-lg
-                  cursor-pointer
-                  dark:peer-checked:text-blue-500
-                  peer-checked:border-blue-600">28
-                </label>
-              </li>
-              <li class="mr-4">
-                <input type="radio" name="size" id="size-5"
-                  class="hidden peer">
-                <label for="size-5" class="inline-flex justify-between
-                  items-center w-full bg-white rounded-lg
-                  cursor-pointer
-                  dark:peer-checked:text-blue-500
-                  peer-checked:border-blue-600
-                  ">26
-                </label>
-              </li>
-              <li class="mr-4">
-                <input type="radio" name="size" id="size-6"
-                  class="hidden peer">
-                <label for="size-6" class="inline-flex justify-between
-                  items-center w-full bg-white rounded-lg
-                  cursor-pointer
-                  dark:peer-checked:text-blue-500
-                  peer-checked:border-blue-600
-                  ">24
-                </label>
-              </li>
-            </ul>
-          </div>
-          <div class="flex mt-6">
-            <p class="text-slate-600 text-[14px] font-bold">جنس: </p>
-            <ul class="flex">
-              <li class="mr-4">
-                <input type="radio" name="material" id="material-1"
-                  class="hidden peer" required>
-                <label for="material-1" class="inline-flex justify-between
-                  items-center w-full rounded-lg
-                  cursor-pointer
-                  dark:peer-checked:text-blue-500">استیل
-                </label>
-              </li>
-              <li class="mr-4">
-                <input type="radio" name="material" id="material-2"
-                  value="hosting-big" class="hidden peer">
-                <label for="material-2" class="inline-flex justify-between
-                  items-center w-full bg-white rounded-lg
-                  cursor-pointer
-                  dark:peer-checked:text-blue-500">نقره
-                </label>
-              </li>
-              <li class="mr-5">
-                <input type="radio" name="material" id="material-3"
-                  class="hidden peer">
-                <label for="material-3" class="inline-flex justify-between
-                  items-center w-full bg-white rounded-lg
-                  cursor-pointer
-                  dark:peer-checked:text-blue-500">طلا
-                </label>
-              </li>
-            </ul>
-          </div>
-          <del class="flex text-[34px] text-slate-500 mt-7">
+
+
+          <del class="main-price-discount flex text-[34px] text-slate-500 mt-7">
             قیمت سایت: 2.400.000 تومان</del>
         </div>
         <div class="2xl:w-[400px] mx-auto">
@@ -193,14 +102,15 @@
         </div>
       </div>
       <hr class="my-[20px] bg-slate-500 px-3">
-      <div class="flex justify-between pb-3 px-3 items-center">
-        <div>
-          <p class="text-[16px] font-bold">قیمت تخفیف خورده برای شما</p>
-          <h4 class="text-red-600 text-[53px] font-bold">1.800.000</h4>
+      <div class="footer flex justify-between pb-3 px-3 items-center">
+        <div class="discount-price">
+          <p class="discount-price-text text-[16px] font-bold">قیمت تخفیف خورده
+            برای شما</p>
+          <h4 class="discount-price-num text-red-600 text-[53px] font-bold">1.800.000</h4>
         </div>
         <div>
 
-          <button class="bg-[#00d66f] text-[20px] text-white px-7 py-2
+          <button class=" add-to-card bg-[#00d66f] text-[20px] text-white px-7 py-2
             rounded-md"><div role="status">
               <svg role="status" class="inline mr-2 w-7 h-7 animate-spin"
                 viewBox="0 0 100 101" fill="none"
@@ -228,13 +138,13 @@
                     35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
                     fill="#ffffff"/>
                   </svg>
-                </div></button>
-
+                </div>
+              </button>
               <p class="text-slate-500 mt-[13px] text-[14px] text-center
                 underline cursor-pointer skip-modal">رد شدن از پیشنهاد خرید</p>
             </div>
           </div>
-        </div>
+    </div>
         <script src="./script.js"></script>
       </body>
     </html>
